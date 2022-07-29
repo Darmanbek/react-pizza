@@ -10,6 +10,10 @@ const App = () => {
     const dispatch = useDispatch();
     const { filter, sort } = useSelector(state => state.filter);
 
+    const getNull = () => {
+        return null;
+    }
+
     useEffect(() => {
         dispatch(getProducts({ filter, sort }));
     }, [dispatch, filter, sort]);
