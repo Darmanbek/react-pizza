@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Darmanbek/react-pizza/static/css/main.df73df4f.css",
+    "main.js": "/Darmanbek/react-pizza/static/js/main.84c7bee4.js",
+    "static/media/empty-cart.png": "/Darmanbek/react-pizza/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "index.html": "/Darmanbek/react-pizza/index.html",
+    "main.df73df4f.css.map": "/Darmanbek/react-pizza/static/css/main.df73df4f.css.map",
+    "main.84c7bee4.js.map": "/Darmanbek/react-pizza/static/js/main.84c7bee4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df73df4f.css",
+    "static/js/main.84c7bee4.js"
+  ]
+}
