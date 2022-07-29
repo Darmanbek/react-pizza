@@ -1,0 +1,139 @@
+.alert-add-product
+{
+    position: fixed;
+    z-index: 169;
+    top: 0;
+    right: 0;
+    margin: 15px 0;
+    height: 100px;
+    cursor: pointer;
+
+    transition: transform .3s;
+    
+    transform: translateX(0);
+
+    &.hide
+    {
+        transform: translateX(150%);
+    }
+
+
+    .alert-block
+    {
+        min-height: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #fff;
+        overflow: hidden;
+        
+        &.add,
+        &.cart
+        {
+            border: 1px solid chartreuse;
+            box-shadow: 0 0 5px rgba(127, 255, 0, .5);
+        }
+
+        &.remove
+        {
+            border: 1px solid crimson;
+            box-shadow: 0 0 5px rgba(220, 20, 60, .5);
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .alert-img
+        {
+            img
+            {
+                max-width: 100px;
+            }
+
+            &_icon
+            {
+                font-size: 64px;
+                margin: 0 20px;
+                color: chartreuse;
+            }
+        }
+
+        .alert-body
+        {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+            .alert-title
+            {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20px;
+
+                &.cart
+                {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                h1
+                {
+                    font-size: 22px;
+                }
+                
+                .alert-desc
+                {
+                    &.cart
+                    {
+                        display: none;
+                    }
+
+                    p
+                    {
+                        font-size: 14px;
+
+                        span
+                        {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .alert-count
+            {
+                &.cart
+                {
+                    display: none;
+                }
+                
+                p
+                {
+                    font-size: 24px;
+
+                    span
+                    {
+                        font-weight: 700;
+                        padding: 0 5px;
+
+                        &.add,
+                        &.cart
+                        {
+                            color: chartreuse;
+                        }
+
+                        &.remove
+                        {
+                            color: crimson;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

@@ -1,0 +1,28 @@
+.products-block {
+    padding: 30px 0px;
+    .products-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+
+        @media (max-width: 1200px) {
+            &
+            {
+                gap: 5px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 662px) {
+            &
+            {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

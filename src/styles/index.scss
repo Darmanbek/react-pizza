@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+a, 
+span,
+button 
+{
+    display: inline-block;
+}
+
+ul,
+li
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.container
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

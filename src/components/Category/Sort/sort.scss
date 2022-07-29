@@ -1,0 +1,106 @@
+.category-sort {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+    @media (max-width: 983px) {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .sort-title {
+        display: flex;
+        gap: 5px;
+        font-size: 17px;
+        cursor: pointer;
+
+        @media (max-width: 786px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 616px) {
+            font-size: 12px;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .down-icon 
+            {
+                transition: transform .5s;
+            }
+
+            &.rotate 
+            {
+                .down-icon 
+                {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+
+    .desc-sort {
+        color: #FE5F1E;
+        border: 1px dashed #FE5F1E;
+        font-weight: 500;
+        font-size: 15px;
+        width: 120px;
+        text-align: center;
+        padding: 5px 10px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            padding: 5px 5px;
+        }
+    }
+
+    .sort-items {
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+        top: 40px;
+        right: 0px;
+        z-index: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        transform: translateY(20px);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        transition: transform .4s, opacity .3s, visibility .3s;
+
+        @media (max-width: 768px) {
+            top: 100%;
+        }
+
+        &.active {
+            transform: translateY(0px);
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+        }
+
+        li {
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+            text-transform: capitalize;
+
+            &:hover {
+                background: rgba(254, 95, 30, 0.05);
+                color: #FE5F1E;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                width: 120px
+            }
+        }
+    }
+}

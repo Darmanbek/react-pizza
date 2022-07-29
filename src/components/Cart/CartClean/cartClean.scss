@@ -1,0 +1,105 @@
+.cart-clean
+{
+    
+    .clean_block
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        h1
+        {
+            font-size: 32px;
+            text-align: center;
+            font-weight: 700;
+
+            @media (max-width: 610px) {
+                font-size: 24px;  
+            }
+
+            @media (max-width: 384px) {
+                font-size: 18px;  
+            }
+        }
+
+        .clean-desc
+        {
+            display: flex;
+            color: #777;
+            flex-direction: column;
+            align-items: center;
+
+            span
+            {
+                text-align: center;
+
+                @media (max-width: 610px) {
+                    font-size: 14px;  
+                }
+
+                @media (max-width: 384px) {
+                    font-size: 12px;  
+                }
+            }
+        }
+
+        .clean-img
+        {
+            max-width: 350px;
+
+            @media (max-width: 610px) {
+                max-width: 300px; 
+            }
+
+            @media (max-width: 384px) {
+                max-width: 250px;
+            }
+        }
+
+        .clean-btn
+        {
+            background-color: #282828;
+            
+            display: inline-block;
+            text-align: center;
+            border: none;
+            width: 250px;
+            border-radius: 30px;
+            padding: 13px 20px;
+            cursor: pointer;
+            color: #fff;
+
+            transition: background .2s;
+
+            @media (max-width: 610px) {
+                padding: 11px 18px;
+                width: 200px;
+            }
+
+            @media (max-width: 384px) {
+                padding: 9px 16px;
+                width: 150px;
+            }
+
+            span
+            {
+                font-weight: 700;
+                font-size: 16px;
+
+                @media (max-width: 610px) {
+                    font-size: 14px; 
+                }
+    
+                @media (max-width: 384px) {
+                    font-size: 12px;
+                }
+            }
+
+            &:hover,
+            &:active
+            {
+                background-color: #FE5F1E;
+            }
+        }
+    }
+}
